@@ -1,9 +1,9 @@
-S = int(input())
+s = int(input())
 
-B = 0
-while s >= 0 :
+b = 0
+while  s >= 0 :
     if s % 5 == 0 :
-        bag += (s//5)
+        b += (s//5)
         print(b)
         break
     s -= 3
