@@ -1,0 +1,19 @@
+n, m = list(map(int, input().split()))
+a = n//6
+b = n%6
+t1=[]
+t2=[]
+for i in range(m):
+    s,k  = input().split()
+    t1.append(int(s))
+    t2.append(int(k))
+p=min(t1)
+q=min(t2)
+if p >= 6*q:
+    print(n*q)
+
+elif p >= b*q:
+    print(p*a+b*q)
+
+elif p <= b*q:
+    print(p*a+p)
